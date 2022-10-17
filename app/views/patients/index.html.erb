@@ -1,0 +1,22 @@
+<h3><%= !current_user.is_doctor ? "Receptionist" : "Doctor" %> Dashboard</h3>
+<div id="user_nav">
+    <% if user_signed_in? %>
+        Signed in as <%= current_user.email %>. This cannot be cheese?
+        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+    <% else %>
+        <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
+    <% end %>
+</div>
+<p style="color: green"><%= notice %></p>
+
+<div>
+<h1 style="float:left">Patients</h1>
+<%= link_to "New patient", new_patient_path, style:"float:right" %>
+<div>
+<div id="patients">
+  <%= render "patient", patients: @patients %>
+  <% if current_user.is_doctor %>
+    <%= bar_chart Patient.group("DATE(appointment_date)").count %>
+  <% end %>
+</div>
+
