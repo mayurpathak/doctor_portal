@@ -31,7 +31,8 @@
       <td><%= record.reference_no %></td>
       <td><%= record.diseases %></td>
       <td><%= record.special_remarks %></td>
-      <td>
+      <td style="
+display: -webkit-inline-box;">
         <%= link_to patient_path(record.id) do %>
           <i class="fa fa-info-circle" aria-hidden="true" style="font-size:25px;color:green"></i>
         <% end %> 
@@ -41,7 +42,7 @@
         <%= button_to patient_path(record), :method => :delete, data: { confirm: 'Are you sure?' }, style:'border: none;' do %>
           <i class="fa fa-trash" aria-hidden="true" style="font-size:25px;color:red"></i>
         <% end %>
-       </td>
+            </td>
     </tr>
   <% end %>
   </tbody>

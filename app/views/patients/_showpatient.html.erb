@@ -1,52 +1,156 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 <div id="<%= dom_id patient %>">
-  <p>
-    <strong>Firstname:</strong>
-    <%= patient.firstname %>
-  </p>
+    <div class="container">
+        <div class="team-single">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 xs-margin-30px-bottom">
+                    <div class="team-single-img">
+                        <div class="pv-lg">
+                            <img class="center-block img-responsive img-circle img-thumbnail thumb100" src="/assets/edit.jpg" alt="Contact" />
+                        </div>
+                    </div>
+                    <div class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center"></div>
+                </div>
 
-  <p>
-    <strong>Lastname:</strong>
-    <%= patient.lastname %>
-  </p>
+                <div class="col-lg-8 col-md-7">
+                    <div class="team-single-text padding-50px-left sm-no-padding-left">
+                        <center><h4 class="font-size38 sm-font-size32 xs-font-size30"><%= patient.firstname %> <%= patient.lastname %></h4></center>
+                        <div class="contact-info-section margin-40px-tb">
+                            <ul class="list-style9 no-margin">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fas fa-graduation-cap text-orange"></i>
+                                            <strong class="margin-10px-left text-orange">Firstname:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.firstname %></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="far fa-gem text-yellow"></i>
+                                            <strong class="margin-10px-left text-yellow">Lastname:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.lastname %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Mobile no:</strong>
-    <%= patient.mobile_no %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fas fa-mobile-alt text-purple"></i>
+                                            <strong class="margin-10px-left xs-margin-four-left text-purple">Mobile no:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.mobile_no %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Email:</strong>
-    <%= patient.email %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fas fa-envelope text-pink"></i>
+                                            <strong class="margin-10px-left xs-margin-four-left text-pink">Email:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.email %></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fas fa-map-marker-alt text-green"></i>
+                                            <strong class="margin-10px-left text-green">Address:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.address %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Address:</strong>
-    <%= patient.address %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fa fa-map-pin text-lightred"></i>
+                                            <strong class="margin-10px-left text-lightred">Pincode:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.pincode %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Pincode:</strong>
-    <%= patient.pincode %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fa fa-calendar text-lightred"></i>
+                                            <strong class="margin-10px-left text-lightred">Appointment date:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.appointment_date %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Appointment date:</strong>
-    <%= patient.appointment_date %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="far fa-file text-lightred"></i>
+                                            <strong class="margin-10px-left text-lightred">Reference no:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.reference_no %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Reference no:</strong>
-    <%= patient.reference_no %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fa fa-h-square text-lightred"></i>
+                                            <strong class="margin-10px-left text-lightred">Diseases:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.diseases %></p>
+                                        </div>
+                                    </div>
+                                </li>
 
-  <p>
-    <strong>Diseases:</strong>
-    <%= patient.diseases %>
-  </p>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-5 col-5">
+                                            <i class="fa fa-comment text-lightred"></i>
+                                            <strong class="margin-10px-left text-lightred">Special remarks:</strong>
+                                        </div>
+                                        <div class="col-md-7 col-7">
+                                            <p><%= patient.special_remarks %></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-  <p>
-    <strong>Special remarks:</strong>
-    <%= patient.special_remarks %>
-  </p>
+                        <h5 class="font-size24 sm-font-size22 xs-font-size20"></h5>
+                        <center>
+                            <div style="display: -webkit-inline-box;">
+                                <%= link_to "Edit", edit_patient_path(@patient), class: "btn btn-xs btn-success"%> &nbsp;&nbsp;&nbsp; <%= link_to "Back to list", patients_path , class: "btn btn-xs btn-info" %> &nbsp;&nbsp;&nbsp; <%=
+                                button_to @patient, :class => "btn btn-xs btn-light" , :method => :delete, data: { confirm: 'Are you sure?' }, style:'border: none;' do %>
+                                <i class="fa fa-trash" aria-hidden="true" style="font-size: 25px; color: red;"></i>
+                                <% end %>
+                            </div>
+                        </center>
+                    </div>
+                </div>
 
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </div>
 </div>

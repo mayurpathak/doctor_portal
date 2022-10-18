@@ -1,10 +1,13 @@
-<h1>Editing patient</h1>
+<br />
 
 <%= render "form", patient: @patient %>
 
-<br>
-
-<div>
-  <%= link_to "Show this patient", @patient %> |
-  <%= link_to "Back to patients", patients_path %>
+<br />
+<div class="container">
+  <div style="display: -webkit-inline-box;">
+    <%= link_to "Show this patient", @patient, class: "btn btn-xs btn-secondary"%> &nbsp;&nbsp;&nbsp; <%= link_to "Back to list", patients_path , class: "btn btn-xs btn-info" %> &nbsp;&nbsp;&nbsp;
+  </div>
 </div>
+
+<br />
+<br />
