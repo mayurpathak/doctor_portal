@@ -112,16 +112,5 @@ If Receptionist Login then Receptionist only see Patients list and also you have
 </figure>
 
 
-The most important and elaborate part of this application is the booking system, in which every doctor has a totally independent set of available appointments. You can choose the date and time for the appointment and click Book. You will then be taken to a confirmation window and voila: your appointment is arranged.
-
-The nicest feature about this implementation is that the selected appointment will no longer be available to other users.
-
-Once your appointment has been set, you can then go to the main men and check your booked appointments.
-
-<figure class="figure">
-    <img src="documentation/doctors/booking.png">
-</figure>
-
-
 # Thank You
 
